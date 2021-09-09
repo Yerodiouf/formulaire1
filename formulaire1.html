@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mon Formulaire</title>
+        <style>
+            fieldset{
+                float: center;
+                border-radius:20px;
+                width:200;
+                height:100;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+              <legend>Vos coordonnées</legend>
+
+               <!-- tableau -->
+             <table>
+                 
+                 <tr>
+                     <td><label>Nom</label>:</td>
+                     <td><input type="text" id="Nom" name="Nom" placeholder="votre Nom"></td>
+                 </tr>
+                
+                 <tr>
+                     <td><label>Prénom</label>:</td>
+                     <td><input type="text" id="Prénom" name="Prénom" placeholder="votre Prénom"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Date de Naissance</label>:</td>
+                    <td><input type="date" id="date" name="Date de Naissance"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Mail</label>:</td>
+                    <td><input type="email" id="email" name="Mail" placeholder="votre mail"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Votre site</label>:</td>
+                    <td><input type="text" id="Votre site" name="Votre site"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Code</label>:</td>
+                    <td><input type="text" id="code" name="code"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Genre</label>:</td>
+                    <td><input type="radio" id="Homme" name="Homme">Homme <input type="radio" id="Femme" name="Femme">Femme</td>
+                </tr>
+                
+               
+                <tr>
+                    <td>Pays:</td>
+                    <td>
+                            <select name="pays" id="pays">
+                            <option value="votre pays">votre pays</option>
+                            <optgroup label="Afrique">
+                            <option value="Senegal">Senegal</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Mauritanie">Mauritanie</option>
+                            <option value="Guinée konakri">Guinée Konakri</option>
+                            <option value="Guinée Bissau">Guinée Bissau</option>
+                            </optgroup>
+                            <optgroup label="Asie">
+                            <option value="etats-unis">shingapour</option>
+                            <option value="chine">Chine</option>
+                            <option value="japon">Japon</option>
+                            </optgroup>
+                            </select>
+                    </td>
+                </tr>
+                
+            </table>
+              
+            </fieldset>
+            <fieldset>
+                <legend>Vos goûts</legend>
+                <input type="checkbox" name="choix" />:Tarte aux Fraises à la crème d'amandes<br/>
+                <input type="checkbox" name="choix" />:Tarte aux prunes<br/>
+                <input type="checkbox" name="choix" />:Tarte rustique aux mirabelle de Lorraire,noisetttes et miel<br/>
+                <textarea name="ameliorer" id="ameliorer" rows="5" cols="50"> Décrivez vos goûts en détail </textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Envoyez nous votre photo</legend>
+
+
+                <input type="file" value="choisir un fichier" /><br/>
+                <br/>
+                <input type="reset" value="effacer" />
+                <input type="submit" value="Envoyer" />
+                
+
+            </fieldset>
+          </form>
+ 
+    </body>
+</html>
